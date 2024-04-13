@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Minutes</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <header>
+        <h1><strong>Team Meeting Minutes</strong></h1>
+        <span>12 April 2024 / 10:00 am / Catalyst Room 0125</span>
+        <br>
+        
+    </header>
+   
+    <main>
+        <br>
+        <h2>Attendees</h2>
+        <ol>
+            <li><input type="checkbox"/>Boss</li>
+            <li><input type="checkbox"/>Kebi</li>
+            <li><input type="checkbox"/>May</li>
+        </ol>
+
+        
+        <h2>Agenda</h2>
+        
+        <nav>
+            <ul>
+                <li><a href="#picture">Picture</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#audio">Audio</a></li>
+            </ul>
+        </nav>
+        <hr>
+        <h3>Meeting Notes</h3>
+        <section>
+            <h4 id = "picture">Picture</h4>
+        <img 
+        src="cats.jpg" 
+        alt="catsimg"
+        width = "250"/>
+        </section>
+        <section>
+            <h4 id = "video">Video</h4>
+            <p><i>Boss and May's <b>video</b></i></p>
+            <section><video width="320" height="240" controls>
+                <source src="cats.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video></section>
+         </section><br>
+        <section>
+            <h4 id = "audio">Audio</h4>
+            <p><strong>Meow audio</strong><em> (Turn voluem down before playing!)</em></p>
+        </section>
+        <section>
+        <audio controls>
+            <source src="meow.wav" type="audio/wav">
+          Your browser does not support the audio element.
+        </audio></section>
+
+        <h4>Choose your favorite</h4>
+          <section>
+            <input type="radio" id="p" name="picture" value="Picture">
+              <label for="p">Picture</label><br>
+              <input type="radio" id="v" name="video" value="Video">
+              <label for="v">Video</label><br>
+              <input type="radio" id="a" name="audio" value="Audio">
+              <label for="a">Audio</label>
+            </section>
+            <br>
+              <section>
+                <label for="comment">Please leave your comment:</label>
+                <br>
+                <textarea id="comment" name="comment" rows="4" cols="50">
+                    
+                </textarea>
+            </section>
+          
+          <hr>
+          <details>
+            <summary>Meeting summary</summary>
+            <p>Showed picture, video, and audio</p>
+          </details>
+
+          <h4>Next Meeting Agenda</h4>
+          <p>Finish Kebi's video edit</p>
+            <br>
+            <section><label for="weekday">Choose next meeting available date:</label>
+                <input list="weekdays" name="weekday" id="weekday">
+                
+                <datalist id="weekdays">
+                  <option value="Monday">
+                  <option value="Tuesday">
+                  <option value="Wednesday">
+                  <option value="Thursday">
+                  <option value="Friday">
+                </datalist></section>
+            <section><label for="time">Choose next meeting available time:</label>
+
+                <select name="time" id="time">
+                  <option value="10am">10am</option>
+                  <option value="12pm">12pm</option>
+                  <option value="2pm">2pm</option>
+                  <option value="4pm">4pm</option>
+                </select></section>
+                <br>
+        
+          <form>
+            <fieldset>
+              <legend>Contact information:</legend>
+              <label for="fname">First name:</label>
+              <input type="text" id="fname" name="fname"><br><br>
+              <label for="lname">Last name:</label>
+              <input type="text" id="lname" name="lname"><br><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br><br>
+              <label for="availableDate">Available date:</label>
+              <input type="date" id="availableDate" name="availableDate"><br><br>
+            </fieldset>
+          </form>
+          
+            
+            
+    </main>
+
+    <footer>
+        <form onsubmit="alert('Submited')">
+            <input type="text" placeholder="Enter Email Address">
+            <button>Submit</button>
+        </form>
+        <br>
+        <div>Meeting Minutes</div>
+    </footer>
+</body>
+</html>
