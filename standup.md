@@ -6,5 +6,5 @@
 |-|-------|------------|-----------|----------|
 | 1 | name1| HIGH | In progress | None |
 | 2 | name2| MEDIUM | Pending | .... |
-| 3 | name3| LOW | FINISH | .... |
+| 3 | name3| LOW | Finish | .... |
 
