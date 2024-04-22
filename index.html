@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <style>
+    body {
+    background-color: linen;
+  }
+  </style>
+  <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meeting Minutes</title>
@@ -9,23 +15,23 @@
 <body>
     <header>
         <h1><strong>Team Meeting Minutes</strong></h1>
-        <span>12 April 2024 / 10:00 am / Catalyst Room 0125</span>
+        <h2>12 April 2024 / 10:00 am / Catalyst Room 0125</h2>
         <br>
         
     </header>
    
     <main>
         <br>
-        <h2>Attendees</h2>
+        <h2 style="color:hsl(240, 100%, 25%)">Attendees</h2>
         <ol>
-            <li><input type="checkbox"/>Boss</li>
+            <li class="box"><input type="checkbox"/>Boss</li>
             <li><input type="checkbox"/>Kebi</li>
             <li><input type="checkbox"/>May</li>
         </ol>
 
         
-        <h2>Agenda</h2>
-        <p>Choose the favorite format of the cat presentation </p>
+        <h2 style="color:rgb(0, 0, 128);line-height: 1mm" >Agenda</h2>
+        <p style="color: color(display-p3 0.3 0.5 0.8);">Choose the favorite format of the cat presentation </p>
         <nav>
             <ul>
                 <li><a href="#picture">Picture</a></li>
@@ -34,7 +40,7 @@
             </ul>
         </nav>
         <hr>
-        <h3>Meeting Notes</h3>
+        <h3 style="color:#000080;line-height: 1cm">Meeting Notes</h3>
         <section>
             <h4 id = "picture">Picture</h4>
         <img 
@@ -43,7 +49,7 @@
         width = "250"/>
         </section>
         <section>
-            <h4 id = "video">Video</h4>
+            <h4 id = "video" >Video</h4>
             <p><i>Boss and May's <b>video</b></i></p>
             <section><video width="320" height="240" controls>
                 <source src="cats.mp4" type="video/mp4">
@@ -60,7 +66,7 @@
           Your browser does not support the audio element.
         </audio></section>
 
-        <h4>Choose your favorite</h4>
+        <h4 id="text">Choose your favorite</h4>
           <section>
             <input type="radio" id="p" name="picture" value="Picture">
               <label for="p">Picture</label><br>
@@ -81,11 +87,21 @@
           <hr>
           <details>
             <summary>Meeting summary</summary>
-            <p>Choosed favorite format for cat presentation</p>
+            <p style="color: color-mix(in srgb, blue, red); line-height: 0.1vm">Choosed favorite format for cat presentation</p>
           </details>
 
           <h4>Next Meeting Agenda</h4>
-          <p>Using the favorite cat format to finish cat presentation</p>
+          <div class="flex-container">
+            <div>1. Using the favorite cat format</div>
+            <div>2. Finish cat presentation</div>
+            <div>3. Mock the presentation</div>
+          </div>
+          <div class="grid-container">
+            <div>4. TODO 4</div>
+            <div>5. TODO 5</div>
+            <div>6. TODO 6</div>
+          </div>
+
             <br>
             <section><label for="weekday">Choose next meeting available date:</label>
                 <input list="weekdays" name="weekday" id="weekday">
@@ -128,7 +144,7 @@
             <button>Submit</button>
         </form>
         <br>
-        <div>Meeting Minutes</div>
+        <h5>Meeting Minutes</h5>
     </footer>
 </body>
 </html>
