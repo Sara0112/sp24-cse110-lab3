@@ -11,6 +11,9 @@ button:active{
 h1, h5 {
     line-height: 10rem;
 }
+h5{
+    background-color: color-mix(in srgb, currentColor 50%, green);
+}
 
 ul {
     margin: 20px 20px 20px 20px ; 
